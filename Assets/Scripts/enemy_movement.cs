@@ -48,6 +48,6 @@ public class enemy_movement : MonoBehaviour
 		velocity /= Vector2.Distance(destination, pos);
 		velocity *= move_per_frame;
 		pos += velocity;
-		rigidbody2d.position = pos;
+		rigidbody2d.MovePosition(pos);
 	}
 }

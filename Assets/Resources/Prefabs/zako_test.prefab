@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212383993674392908}
   - component: {fileID: 50114747364869282}
   - component: {fileID: 114268560407335134}
-  - component: {fileID: 61782559230108342}
+  - component: {fileID: 58772912713475870}
   m_Layer: 0
   m_Name: zako_test
   m_TagString: Untagged
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &61782559230108342
-BoxCollider2D:
+--- !u!58 &58772912713475870
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,18 +76,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.3}
-    newSize: {x: 0.3, y: 0.3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3}
-  m_EdgeRadius: 0
+  m_Radius: 0.15
 --- !u!114 &114268560407335134
 MonoBehaviour:
   m_ObjectHideFlags: 1

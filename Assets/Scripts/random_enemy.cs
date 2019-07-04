@@ -13,10 +13,12 @@ public class random_enemy : MonoBehaviour {
 	private float next_creation_time = 1f;
 	//	隔这段时间后生成下一个杂鱼
 	private Vector2 pos;
+	//  
+	private Rigidbody2D rigidbody2d;
 	//	下一个杂鱼的出现位置
 	private GameObject player;
 	//	方便调用玩家的位置
-	private string enemy = "Prefab_KR/zako_test";
+	private string enemy = "Prefabs/zako_test";
 	//	杂鱼预置体文件位置
 	private GameObject tmp;
 	//	指向新生成的杂鱼
@@ -58,8 +60,9 @@ public class random_enemy : MonoBehaviour {
 				// GameObject new_enemy = AssetDatabase.LoadAssetAtPath(enemy);
 				//	上述方法似乎必须在Editor模式下使用
 				tmp = Instantiate(new_enemy);	//	实例化
+				rigidbody2d=tmp.GetComponent<Rigidbody2D>();
 				// getComponent<RigidBody2D>().position;
-				tmp.transform.position = random_position();
+				rigidbody2d.MovePosition(random_position());
 			}
 		}
 	}
